@@ -13,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/morning_home"
-        android:textSize="42sp"
         android:textColor="@color/white"
+        android:textSize="42sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,26 +24,20 @@
         android:id="@+id/text_firstFragment_arg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="18sp"
         android:textColor="@color/white"
-        tools:text="Arg1"
-        app:layout_constraintTop_toBottomOf="@id/text_firstFragment_title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/text_firstFragment_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_firstFragment_title"
+        tools:text="Arg1" />
 
     <TextView
         android:id="@+id/text_firstFragment_arg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="18sp"
         android:textColor="@color/white"
-        tools:text="Arg2"
-        app:layout_constraintTop_toBottomOf="@id/text_firstFragment_arg1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/text_firstFragment_arg1"
+        app:layout_constraintTop_toBottomOf="@+id/text_firstFragment_title"
+        tools:text="Arg2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
