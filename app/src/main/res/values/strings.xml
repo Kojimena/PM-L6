@@ -6,4 +6,10 @@
     <string name="home_menu">Home</string>
     <string name="search_menu">Search</string>
     <string name="library_menu">Library</string>
+    <string name="search_fsearch">Search</string>
+    <string name="genres_fsearch">Your top genres</string>
+    <string name="indie_fsearch">Indie</string>
+    <string name="pop_fsearch">Pop</string>
+    <string name="latin_fsearch">Latin</string>
+    <string name="hiphop_fsearch">Hip-hop</string>
 </resources>

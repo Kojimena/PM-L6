@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/morning_home"
         android:textColor="@color/white"
+        android:fontFamily="@font/cicular"
         android:textSize="42sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,10 +26,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:fontFamily="@font/cicular"
         android:textSize="18sp"
+        android:padding="10dp"
         app:layout_constraintStart_toStartOf="@+id/text_firstFragment_title"
         app:layout_constraintTop_toBottomOf="@+id/text_firstFragment_title"
-        tools:text="Arg1" />
+        tools:text="Jimena" />
 
     <TextView
         android:id="@+id/text_firstFragment_arg2"
@@ -36,8 +39,10 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textSize="18sp"
+        android:padding="10dp"
+        android:fontFamily="@font/cicular"
         app:layout_constraintStart_toEndOf="@+id/text_firstFragment_arg1"
         app:layout_constraintTop_toBottomOf="@+id/text_firstFragment_title"
-        tools:text="Arg2" />
+        tools:text="Hernández" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

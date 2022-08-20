@@ -1,14 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Search">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+
+
+    <TextView
+        android:id="@+id/text_firstFragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintopmid"
+        android:layout_marginStart="@dimen/paddingsize"
+        android:padding="@dimen/paddingsize"
+        android:text="@string/search_fsearch"
+        android:fontFamily="@font/cicular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titlemax"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintopmid"
+        android:text="@string/genres_fsearch"
+        android:fontFamily="@font/cicular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titlemin"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_firstFragment_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_firstFragment_title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/genero1"
+        android:background="@color/verde"
+        android:layout_width="@dimen/widtsongs"
+        android:layout_height="@dimen/heightsongs"
+        android:layout_marginTop="@dimen/margintopmid"
+        app:layout_constraintStart_toStartOf="@+id/text_firstFragment_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/genero2"
+        android:layout_width="@dimen/widtsongs"
+        android:background="@color/lila"
+        android:layout_height="@dimen/heightsongs"
+        android:layout_marginStart="@dimen/paddingsize"
+        android:layout_marginEnd="@dimen/paddingsize"
+        app:layout_constraintBottom_toBottomOf="@+id/genero1"
+        app:layout_constraintStart_toEndOf="@+id/genero1">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/genero3"
+        android:layout_width="@dimen/widtsongs"
+        android:background="@color/naranja"
+        android:layout_height="@dimen/heightsongs"
+        android:layout_marginTop="@dimen/margintopmid"
+        app:layout_constraintStart_toStartOf="@+id/genero1"
+        app:layout_constraintTop_toBottomOf="@+id/genero1">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/genero4"
+        android:layout_width="@dimen/widtsongs"
+        android:layout_height="@dimen/heightsongs"
+        android:background="@color/gris"
+        app:layout_constraintEnd_toEndOf="@+id/genero2"
+        app:layout_constraintTop_toTopOf="@+id/genero3">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/nomgenero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/indie_fsearch"
+        android:layout_marginTop="@dimen/paddingsize"
+        android:layout_marginStart="@dimen/paddingsize"
+        android:textSize="@dimen/sizegeneros"
+        android:textColor="@color/white"
+        android:fontFamily="@font/cicular"
+        app:layout_constraintStart_toStartOf="@+id/genero1"
+        app:layout_constraintTop_toTopOf="@+id/genero1" />
+
+    <TextView
+        android:id="@+id/nombgenero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sizegeneros"
+        android:layout_marginTop="@dimen/paddingsize"
+        android:layout_marginStart="@dimen/paddingsize"
+        android:fontFamily="@font/cicular"
+        android:text="@string/pop_fsearch"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/genero2"
+        app:layout_constraintTop_toTopOf="@+id/genero2" />
+
+    <TextView
+        android:id="@+id/nombgenero3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sizegeneros"
+        android:layout_marginTop="@dimen/paddingsize"
+        android:layout_marginStart="@dimen/paddingsize"
+        android:fontFamily="@font/cicular"
+        android:text="@string/latin_fsearch"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/genero3"
+        app:layout_constraintTop_toTopOf="@+id/genero3" />
+
+    <TextView
+        android:id="@+id/nombgenero4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingsize"
+        android:layout_marginStart="@dimen/paddingsize"
+        android:fontFamily="@font/cicular"
+        android:text="@string/hiphop_fsearch"
+        android:textSize="@dimen/sizegeneros"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/genero4"
+        app:layout_constraintTop_toTopOf="@+id/genero4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

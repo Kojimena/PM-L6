@@ -9,11 +9,17 @@
     <color name="white">#FFFFFFFF</color>
     <color name="surface_dark">#D1D1D1</color>
     <color name="surface_light_primary">#F2F3F4 </color>
-    <color name="surface_dark_primary">#C0ACEC</color>
+    <color name="lila">#C0ACEC</color>
     <color name="icon_color">#270E67</color>
     <color name="font_color_over_surface">#270E67</color>
     <color name="font_aqua">#3DA9C9</color>
     <color name="gris">#626567 </color>
     <color name="fondolinear">#D4E6F1</color>
-    <color name="colorboton">#FF8A65</color>
+    <color name="naranja">#FF8A65</color>
+    <color name="rojo">#FF3333</color>
+    <color name="verde">#66CC99 </color>
+    <color name="azul">#0000FF</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="morado">#FF66FF</color>
+
 </resources>

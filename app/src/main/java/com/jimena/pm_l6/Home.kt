@@ -43,13 +43,15 @@ class Home : Fragment(R.layout.fragment_home) {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+
         textArg1 = view.findViewById(R.id.text_firstFragment_arg1)
         textArg2 = view.findViewById(R.id.text_firstFragment_arg2)
-        textArg1.text = param1
-        textArg2.text = param2
-    }
 
+        textArg1.text = param1 ?: "Jimena"
+        textArg2.text = param2 ?: "Hernández"
+
+        super.onViewCreated(view, savedInstanceState)
+    }
 
     companion object {
         /**
