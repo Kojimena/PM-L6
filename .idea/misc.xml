@@ -3,17 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/add.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/arrowdown.xml" value="0.1875" />
         <entry key="app/src/main/res/drawable/arrowup.xml" value="0.1875" />
         <entry key="app/src/main/res/drawable/backgroun_square.xml" value="0.1315" />
         <entry key="app/src/main/res/drawable/background_round.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/badbunny.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bordercircular.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/heartshape.xml" value="0.1315" />
         <entry key="app/src/main/res/drawable/home.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/drawable/library.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/person.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/search.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18202963566434557" />
-        <entry key="app/src/main/res/layout/fragment_library.xml" value="0.23746643066406248" />
-        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.17766661679834353" />
+        <entry key="app/src/main/res/layout/fragment_library.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.10238738095849981" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.24895833333333334" />
       </map>
     </option>

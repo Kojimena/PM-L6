@@ -43,7 +43,8 @@
         android:src="@drawable/person"
         android:background="@drawable/background_round"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text_firstFragment_title" />
+        app:layout_constraintTop_toTopOf="@+id/text_firstFragment_title"
+        android:contentDescription="@string/userimage" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -52,6 +53,7 @@
         android:src="@drawable/search"
         android:layout_marginEnd="@dimen/margintopmid"
         app:layout_constraintEnd_toStartOf="@+id/sumarcanciones"
+        android:contentDescription="@string/searchimage"
         app:layout_constraintTop_toTopOf="@+id/text_firstFragment_title" />
 
     <ImageView
@@ -61,6 +63,7 @@
         android:src="@drawable/add"
         android:layout_marginEnd="@dimen/margintopmid"
         app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/addimage"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <ImageView
@@ -68,6 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/arrowup"
+        android:contentDescription="@string/arrowupimage"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/topgenres" />
 
@@ -78,6 +82,7 @@
         android:src="@drawable/arrowdown"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toEndOf="@+id/searchcanciones"
+        android:contentDescription="@string/arrdownimage"
         app:layout_constraintTop_toTopOf="@+id/searchcanciones" />
 
     <ImageView
@@ -88,6 +93,7 @@
         android:background="@drawable/backgroun_square"
         android:padding="@dimen/paddingsize"
         android:src="@drawable/heartshape"
+        android:contentDescription="@string/likeimage"
         app:layout_constraintStart_toStartOf="@+id/searchcanciones"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 

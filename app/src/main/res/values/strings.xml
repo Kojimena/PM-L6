@@ -2,7 +2,7 @@
     <string name="app_name">PM-L6</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="morning_home">Good morning</string>
+    <string name="morning_home">Good morning,</string>
     <string name="home_menu">Home</string>
     <string name="search_menu">Search</string>
     <string name="library_menu">Library</string>
@@ -16,4 +16,10 @@
     <string name="recent_fsearch">Most recent</string>
     <string name="likedsongs_flibrary">Liked Songs</string>
     <string name="numbersongs_flibrary">number</string>
+    <string name="userimage">user</string>
+    <string name="searchimage">searchimage</string>
+    <string name="addimage">add</string>
+    <string name="arrowupimage">arr</string>
+    <string name="arrdownimage">arrdown</string>
+    <string name="likeimage">like</string>
 </resources>

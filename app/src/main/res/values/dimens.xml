@@ -4,7 +4,7 @@
     <dimen name="titlemax">30sp</dimen>
     <dimen name="titlemid">20sp</dimen>
     <dimen name="margintopmid">20dp</dimen>
-    <dimen name="widtsongs">190dp</dimen>
+    <dimen name="widtsongs">180dp</dimen>
     <dimen name="heightsongs">100dp</dimen>
     <dimen name="sizegeneros">15sp</dimen>
     <dimen name="titlemin">20sp</dimen>
