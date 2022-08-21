@@ -52,12 +52,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/genero2"
         android:layout_width="@dimen/widtsongs"
-        android:background="@drawable/bordercircular"
-        android:backgroundTint="@color/lila"
         android:layout_height="@dimen/heightsongs"
         android:layout_marginStart="@dimen/paddingsize"
         android:layout_marginEnd="@dimen/paddingsize"
+        android:background="@drawable/bordercircular"
+        android:backgroundTint="@color/lila"
         app:layout_constraintBottom_toBottomOf="@+id/genero1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/genero1">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
