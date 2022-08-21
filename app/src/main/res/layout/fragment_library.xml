@@ -1,14 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Library">
+    android:background="@color/black"
+    tools:context=".Search">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/text_firstFragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopFull"
+        android:layout_marginStart="@dimen/margintopmid"
+        android:fontFamily="@font/cicular"
+        android:text="@string/library_flibrary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titlemid"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/topgenres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintopmid"
+        android:layout_marginStart="@dimen/margintopmid"
+        android:fontFamily="@font/cicular"
+        android:text="@string/recent_fsearch"
+        android:textColor="@color/gris"
+        android:textSize="@dimen/sizegeneros"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/text_firstFragment_title" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margintopmid"
+        android:src="@drawable/person"
+        android:background="@drawable/background_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_firstFragment_title" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:layout_marginEnd="@dimen/margintopmid"
+        app:layout_constraintEnd_toStartOf="@+id/sumarcanciones"
+        app:layout_constraintTop_toTopOf="@+id/text_firstFragment_title" />
+
+    <ImageView
+        android:id="@+id/sumarcanciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_marginEnd="@dimen/margintopmid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/searchcanciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrowup"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/topgenres" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrowdown"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/searchcanciones"
+        app:layout_constraintTop_toTopOf="@+id/searchcanciones" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margintopmid"
+        android:background="@drawable/backgroun_square"
+        android:padding="@dimen/paddingsize"
+        android:src="@drawable/heartshape"
+        app:layout_constraintStart_toStartOf="@+id/searchcanciones"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/likedsongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/likedsongs_flibrary"
+        android:layout_marginStart="@dimen/margintopmid"
+        android:fontFamily="@font/cicular"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/paddingsize"
+        app:layout_constraintStart_toEndOf="@+id/like"
+        app:layout_constraintTop_toTopOf="@+id/like" />
+
+    <TextView
+        android:id="@+id/numberofsongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numbersongs_flibrary"
+        android:textColor="@color/gris"
+        android:fontFamily="@font/cicular"
+        app:layout_constraintStart_toStartOf="@+id/likedsongs"
+        app:layout_constraintTop_toBottomOf="@+id/likedsongs" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

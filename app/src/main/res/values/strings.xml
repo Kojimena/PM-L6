@@ -12,4 +12,8 @@
     <string name="pop_fsearch">Pop</string>
     <string name="latin_fsearch">Latin</string>
     <string name="hiphop_fsearch">Hip-hop</string>
+    <string name="library_flibrary">Your library</string>
+    <string name="recent_fsearch">Most recent</string>
+    <string name="likedsongs_flibrary">Liked Songs</string>
+    <string name="numbersongs_flibrary">number</string>
 </resources>
