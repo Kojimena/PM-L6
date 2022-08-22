@@ -38,12 +38,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/genero1"
-        android:background="@drawable/bordercircular"
-        android:backgroundTint="@color/verde"
+        android:layout_marginStart="@dimen/paddingsize"
         android:layout_width="@dimen/widtsongs"
         android:layout_height="@dimen/heightsongs"
         android:layout_marginTop="@dimen/margintopmid"
-        app:layout_constraintStart_toStartOf="@+id/text_firstFragment_title"
+        android:background="@drawable/bordercircular"
+        android:backgroundTint="@color/verde"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -53,13 +54,11 @@
         android:id="@+id/genero2"
         android:layout_width="@dimen/widtsongs"
         android:layout_height="@dimen/heightsongs"
-        android:layout_marginStart="@dimen/paddingsize"
         android:layout_marginEnd="@dimen/paddingsize"
         android:background="@drawable/bordercircular"
         android:backgroundTint="@color/lila"
         app:layout_constraintBottom_toBottomOf="@+id/genero1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/genero1">
+        app:layout_constraintEnd_toEndOf="parent">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -79,8 +78,8 @@
         android:layout_height="@dimen/heightsongs"
         android:background="@drawable/bordercircular"
         android:backgroundTint="@color/gris"
-        app:layout_constraintEnd_toEndOf="@+id/genero2"
-        app:layout_constraintTop_toTopOf="@+id/genero3">
+        app:layout_constraintBottom_toBottomOf="@+id/genero3"
+        app:layout_constraintEnd_toEndOf="@+id/genero2">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
